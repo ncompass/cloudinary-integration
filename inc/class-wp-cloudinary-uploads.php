@@ -90,8 +90,8 @@ class Cloudinary_WP_Integration {
 					array(
 						'create_derived' => false,
 						'bytes_step'		 => 20000,
-						'min_width'			=> 200,
-						'max_width'			=> 1000,
+						'min_width'			=> 150,
+						'max_width'			=> 2000,
 						'max_images'		 => 20,
 					),
 				),
@@ -156,7 +156,7 @@ class Cloudinary_WP_Integration {
 
 				$crop = ( $sizes[ $size ]['crop'] ) ? 'c_lfill' : 'c_limit';
 
-				$url_params = "w_$width,h_$height,$crop,f_auto,q_auto";
+				$url_params = "f_auto,q_auto,w_$width,h_$height,$crop";
 
 				$downsize = array(
 					str_replace( '/image/upload', '/image/upload/' . $url_params, $metadata['cloudinary_data']['secure_url'] ),
@@ -166,7 +166,7 @@ class Cloudinary_WP_Integration {
 				);
 			} elseif ( is_array( $size ) ) {
 				$downsize = array(
-					str_replace( '/image/upload', "/image/upload/w_$size[0],h_$size[1],c_limit,f_auto,q_auto", $metadata['cloudinary_data']['secure_url'] ),
+					str_replace( '/image/upload', "/image/upload/f_auto,q_auto,w_$size[0],h_$size[1],c_limit", $metadata['cloudinary_data']['secure_url'] ),
 					$size[0],
 					$size[1],
 					true,

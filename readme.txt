@@ -14,3 +14,7 @@ This plugin is an experiment to demonstrate integrating <a href="http://cloudina
  1.0.0 - Initial release
  1.0.1 - Added f_auto & q_auto
  1.0.11 - Readded f_auto & q_auto
+
+
+== ToDo ==
+  Revert URLs when plugin is off
