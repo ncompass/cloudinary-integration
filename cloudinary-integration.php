@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin Name:     Cloudinary Integration Demo
- * Plugin URI:      PLUGIN SITE HERE
- * Description:     A demo integration with Cloudinary
- * Author:          Joe McGill
- * Author URI:      http://joemcgill.net
+ * Plugin Name:     Cloudinary Integration
+ * Plugin URI:      https://github.com/ncompass/cloudinary-integration
+ * Description:     Cloudinary Integration by NComp@ss
+ * Author:          NComp@ss
+ * Author URI:      https://www.ncompass.co.uk
  * Text Domain:     cloudinary-integration
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         1.0.0
  *
  * @package         Cloudinary_Integration
  */
