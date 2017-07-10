@@ -119,8 +119,6 @@ class Cloudinary_WP_Integration {
 
 		if ( isset( $metadata['cloudinary_data']['secure_url'] ) ) {
 			$url = str_replace( '/image/upload', "/image/upload/f_auto,q_auto", $metadata['cloudinary_data']['secure_url'] )
-		}
-
 		return $url;
 	}
 
