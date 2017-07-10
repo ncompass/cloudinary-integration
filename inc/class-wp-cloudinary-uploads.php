@@ -118,7 +118,7 @@ class Cloudinary_WP_Integration {
 		$metadata = wp_get_attachment_metadata( $attachment_id );
 
 		if ( isset( $metadata['cloudinary_data']['secure_url'] ) ) {
-			$url = str_replace( '/image/upload', "/image/upload/f_auto,q_auto", $metadata['cloudinary_data']['secure_url'] );
+			$url = '/image/upload'.$metadata['cloudinary_data']['secure_url'];
 		}
 		return $url;
 	}
