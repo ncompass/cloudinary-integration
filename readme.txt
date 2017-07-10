@@ -17,4 +17,5 @@ This plugin is an experiment to demonstrate integrating <a href="http://cloudina
 
 
 == ToDo ==
-  Revert URLs when plugin is off
+  -Revert URLs when plugin is off.
+  -Fix width/height created images to check width and height individually.. for images that are smaller on either height or width...
