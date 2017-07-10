@@ -118,7 +118,7 @@ class Cloudinary_WP_Integration {
 		$metadata = wp_get_attachment_metadata( $attachment_id );
 
 		if ( isset( $metadata['cloudinary_data']['secure_url'] ) ) {
-			$url = $metadata['cloudinary_data']['secure_url'];
+			$url = str_replace( '/image/upload', "/image/upload/f_auto,q_auto", $metadata['cloudinary_data']['secure_url'] )
 		}
 
 		return $url;
@@ -157,7 +157,7 @@ class Cloudinary_WP_Integration {
 
 				$crop = ( $sizes[ $size ]['crop'] ) ? 'c_lfill' : 'c_limit';
 
-				$url_params = "w_$width,h_$height,$crop";
+				$url_params = "w_$width,h_$height,$crop,f_auto,q_auto";
 
 				$downsize = array(
 					str_replace( '/image/upload', '/image/upload/' . $url_params, $metadata['cloudinary_data']['secure_url'] ),
