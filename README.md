@@ -1,6 +1,6 @@
 # Cloudinary Integration #
-**Contributors:** NComp@ss
-**Tags:** media, images  
+**Contributors:** NComp@ss  
+**Tags:** media, images, cloudinary   
 **Requires at least:** 4.5  
 **Tested up to:** 4.6.1  
 **Stable tag:** 1.0.0  

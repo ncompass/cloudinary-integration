@@ -1,6 +1,6 @@
 === Cloudinary Integration ===
 Contributors: NComp@ss
-Tags: media, images
+Tags: media, images, cloduinary  
 Requires at least: 4.5
 Tested up to: 4.6.1
 Stable tag: 1.0.0
@@ -11,4 +11,4 @@ This plugin is an experiment to demonstrate integrating <a href="http://cloudina
 
 == Changelog ==
 
- 1.0.0 - Initial release  
+ 1.0.0 - Initial release
