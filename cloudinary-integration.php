@@ -7,7 +7,7 @@
  * Author URI:      	https://www.ncompass.co.uk
  * Text Domain:     	cloudinary-integration
  * Domain Path:				/languages
- * Version:         	1.0.0
+ * Version:         	1.0.1
  * GitHub Plugin URI:	https://github.com/ncompass/cloudinary-integration
  *
  * @package         Cloudinary_Integration
